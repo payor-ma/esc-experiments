@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name breakout-esc)(type KiCad)(uri "$(KIPRJMOD)/breakout-esc.pretty")(options "")(descr ""))
+)

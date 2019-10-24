@@ -1,0 +1,1416 @@
+EESchema Schematic File Version 4
+LIBS:breakout-esc-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 12118 8546
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 500  6650 0    70   ~ 0
+OUT1
+Wire Wire Line
+	500  7450 500  7350
+Text Label 500  7450 0    10   ~ 0
+GND
+Wire Wire Line
+	2900 6150 2900 6050
+Wire Wire Line
+	2900 6050 2900 5950
+Wire Wire Line
+	2900 6050 3100 6050
+Connection ~ 2900 6050
+Text Label 2900 6150 0    10   ~ 0
+GND
+Wire Wire Line
+	1200 5950 1300 5950
+Text Label 1200 5950 0    10   ~ 0
+GND
+Wire Wire Line
+	2900 6650 2900 6550
+Wire Wire Line
+	2900 6550 2900 6450
+Wire Wire Line
+	2900 6550 3100 6550
+Connection ~ 2900 6550
+Text Label 2900 6650 0    10   ~ 0
+GND
+Wire Wire Line
+	2400 6150 2500 6150
+Wire Wire Line
+	2600 5950 2400 5950
+Wire Wire Line
+	2400 6150 2400 5950
+Wire Wire Line
+	2300 6350 2400 6350
+Wire Wire Line
+	2400 6350 2400 6150
+Connection ~ 2400 6150
+Connection ~ 2400 5950
+Wire Wire Line
+	2300 6550 2400 6550
+Wire Wire Line
+	2400 6550 2400 6650
+Wire Wire Line
+	2400 6650 2600 6650
+Wire Wire Line
+	2500 6450 2400 6450
+Wire Wire Line
+	2400 6450 2400 6550
+Connection ~ 2400 6550
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C103
+U 1 1 218CB388
+P 700 7350
+F 0 "C103" H 760 7465 59  0000 L BNN
+F 1 "100n" H 760 7265 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 700 7350 50  0001 C CNN
+F 3 "" H 700 7350 50  0001 C CNN
+	1    700  7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND04
+U 1 1 D896219B
+P 1200 6050
+F 0 "#GND04" H 1200 6050 50  0001 C CNN
+F 1 "GND" H 1100 5950 59  0000 L BNN
+F 2 "" H 1200 6050 50  0001 C CNN
+F 3 "" H 1200 6050 50  0001 C CNN
+	1    1200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND06
+U 1 1 A07C0193
+P 500 7550
+F 0 "#GND06" H 500 7550 50  0001 C CNN
+F 1 "GND" H 400 7450 59  0000 L BNN
+F 2 "" H 500 7550 50  0001 C CNN
+F 3 "" H 500 7550 50  0001 C CNN
+	1    500  7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C101
+U 1 1 537F9CC9
+P 2800 5950
+F 0 "C101" H 2860 6065 59  0000 L BNN
+F 1 "1n" H 2860 5865 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2800 5950 50  0001 C CNN
+F 3 "" H 2800 5950 50  0001 C CNN
+	1    2800 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND011
+U 1 1 19DA8D48
+P 3100 6150
+F 0 "#GND011" H 3100 6150 50  0001 C CNN
+F 1 "GND" H 3000 6050 59  0000 L BNN
+F 2 "" H 3100 6150 50  0001 C CNN
+F 3 "" H 3100 6150 50  0001 C CNN
+	1    3100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R101
+U 1 1 9E8052E2
+P 2700 6150
+F 0 "R101" H 2550 6209 59  0000 L BNN
+F 1 "1k" H 2550 6020 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2700 6150 50  0001 C CNN
+F 3 "" H 2700 6150 50  0001 C CNN
+	1    2700 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:HW-INFINEON_BTN8962TA-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import U1
+U 1 1 10047A9C
+P 1800 6650
+F 0 "U1" H 1400 7470 70  0000 L BNN
+F 1 "HW-INFINEON_BTN8982" H 1400 5650 70  0000 L BNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:HW-INFINEON_TO263-7-1" H 1800 6650 50  0001 C CNN
+F 3 "" H 1800 6650 50  0001 C CNN
+	1    1800 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R104
+U 1 1 D3DDBAD3
+P 2700 6450
+F 0 "R104" H 2550 6509 59  0000 L BNN
+F 1 "1k" H 2550 6320 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2700 6450 50  0001 C CNN
+F 3 "" H 2700 6450 50  0001 C CNN
+	1    2700 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND02
+U 1 1 13A376EC
+P 3100 6650
+F 0 "#GND02" H 3100 6650 50  0001 C CNN
+F 1 "GND" H 3000 6550 59  0000 L BNN
+F 2 "" H 3100 6650 50  0001 C CNN
+F 3 "" H 3100 6650 50  0001 C CNN
+	1    3100 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:DINA4_L-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #FRAME1
+U 1 1 73DA64CA
+P 600 8650
+F 0 "#FRAME1" H 600 8650 50  0001 C CNN
+F 1 "DINA4_L" H 600 8650 50  0001 C CNN
+F 2 "" H 600 8650 50  0001 C CNN
+F 3 "" H 600 8650 50  0001 C CNN
+	1    600  8650
+	1    0    0    -1  
+$EndComp
+Text Notes 1600 8050 0    70   ~ 0
+Phase 1
+Wire Wire Line
+	500  6650 1150 6650
+Wire Wire Line
+	800  7350 1000 7350
+Text Label 3650 6650 0    70   ~ 0
+OUT2
+Wire Wire Line
+	3650 7450 3650 7350
+Text Label 3650 7450 0    10   ~ 0
+GND
+Wire Wire Line
+	6050 6150 6050 6050
+Wire Wire Line
+	6050 6050 6050 5950
+Wire Wire Line
+	6050 6050 6250 6050
+Connection ~ 6050 6050
+Text Label 6050 6150 0    10   ~ 0
+GND
+Wire Wire Line
+	4350 5950 4450 5950
+Text Label 4350 5950 0    10   ~ 0
+GND
+Wire Wire Line
+	6050 6650 6050 6550
+Wire Wire Line
+	6050 6550 6050 6450
+Wire Wire Line
+	6050 6550 6250 6550
+Connection ~ 6050 6550
+Text Label 6050 6650 0    10   ~ 0
+GND
+Wire Wire Line
+	5550 6150 5650 6150
+Wire Wire Line
+	5750 5950 5550 5950
+Wire Wire Line
+	5550 6150 5550 5950
+Wire Wire Line
+	5450 6350 5550 6350
+Wire Wire Line
+	5550 6350 5550 6150
+Connection ~ 5550 6150
+Connection ~ 5550 5950
+Wire Wire Line
+	5450 6550 5550 6550
+Wire Wire Line
+	5550 6550 5550 6650
+Wire Wire Line
+	5550 6650 5750 6650
+Wire Wire Line
+	5650 6450 5550 6450
+Wire Wire Line
+	5550 6450 5550 6550
+Connection ~ 5550 6550
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C203
+U 1 1 5CBF3F23
+P 3850 7350
+F 0 "C203" H 3910 7465 59  0000 L BNN
+F 1 "100n" H 3910 7265 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3850 7350 50  0001 C CNN
+F 3 "" H 3850 7350 50  0001 C CNN
+	1    3850 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0101
+U 1 1 5CBF3F2D
+P 4350 6050
+F 0 "#GND0101" H 4350 6050 50  0001 C CNN
+F 1 "GND" H 4250 5950 59  0000 L BNN
+F 2 "" H 4350 6050 50  0001 C CNN
+F 3 "" H 4350 6050 50  0001 C CNN
+	1    4350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0102
+U 1 1 5CBF3F37
+P 3650 7550
+F 0 "#GND0102" H 3650 7550 50  0001 C CNN
+F 1 "GND" H 3550 7450 59  0000 L BNN
+F 2 "" H 3650 7550 50  0001 C CNN
+F 3 "" H 3650 7550 50  0001 C CNN
+	1    3650 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C201
+U 1 1 5CBF3F41
+P 5950 5950
+F 0 "C201" H 6010 6065 59  0000 L BNN
+F 1 "1n" H 6010 5865 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5950 5950 50  0001 C CNN
+F 3 "" H 5950 5950 50  0001 C CNN
+	1    5950 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0103
+U 1 1 5CBF3F4B
+P 6250 6150
+F 0 "#GND0103" H 6250 6150 50  0001 C CNN
+F 1 "GND" H 6150 6050 59  0000 L BNN
+F 2 "" H 6250 6150 50  0001 C CNN
+F 3 "" H 6250 6150 50  0001 C CNN
+	1    6250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R201
+U 1 1 5CBF3F55
+P 5850 6150
+F 0 "R201" H 5700 6209 59  0000 L BNN
+F 1 "1k" H 5700 6020 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5850 6150 50  0001 C CNN
+F 3 "" H 5850 6150 50  0001 C CNN
+	1    5850 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:HW-INFINEON_BTN8962TA-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import U2
+U 1 1 5CBF3F5F
+P 4950 6650
+F 0 "U2" H 4550 7470 70  0000 L BNN
+F 1 "HW-INFINEON_BTN8982" H 4550 5650 70  0000 L BNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:HW-INFINEON_TO263-7-1" H 4950 6650 50  0001 C CNN
+F 3 "" H 4950 6650 50  0001 C CNN
+	1    4950 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R204
+U 1 1 5CBF3F69
+P 5850 6450
+F 0 "R204" H 5700 6509 59  0000 L BNN
+F 1 "1k" H 5700 6320 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5850 6450 50  0001 C CNN
+F 3 "" H 5850 6450 50  0001 C CNN
+	1    5850 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C202
+U 1 1 5CBF3F73
+P 5850 6650
+F 0 "C202" H 5910 6765 59  0000 L BNN
+F 1 "47n" H 5910 6565 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5850 6650 50  0001 C CNN
+F 3 "" H 5850 6650 50  0001 C CNN
+	1    5850 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0104
+U 1 1 5CBF3F7D
+P 6250 6650
+F 0 "#GND0104" H 6250 6650 50  0001 C CNN
+F 1 "GND" H 6150 6550 59  0000 L BNN
+F 2 "" H 6250 6650 50  0001 C CNN
+F 3 "" H 6250 6650 50  0001 C CNN
+	1    6250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:DINA4_L-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #FRAME2
+U 1 1 5CBF3F87
+P 3750 8650
+F 0 "#FRAME2" H 3750 8650 50  0001 C CNN
+F 1 "DINA4_L" H 3750 8650 50  0001 C CNN
+F 2 "" H 3750 8650 50  0001 C CNN
+F 3 "" H 3750 8650 50  0001 C CNN
+	1    3750 8650
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 8050 0    70   ~ 0
+Phase 2
+Wire Wire Line
+	3650 6650 4350 6650
+Wire Wire Line
+	3950 7350 4200 7350
+Text Label 6800 6700 0    70   ~ 0
+OUT3
+Wire Wire Line
+	6800 7500 6800 7400
+Text Label 6800 7500 0    10   ~ 0
+GND
+Wire Wire Line
+	9200 6200 9200 6100
+Wire Wire Line
+	9200 6100 9200 6000
+Wire Wire Line
+	9200 6100 9400 6100
+Connection ~ 9200 6100
+Text Label 9200 6200 0    10   ~ 0
+GND
+Wire Wire Line
+	7500 6000 7600 6000
+Text Label 7500 6000 0    10   ~ 0
+GND
+Wire Wire Line
+	9200 6700 9200 6600
+Wire Wire Line
+	9200 6600 9200 6500
+Wire Wire Line
+	9200 6600 9400 6600
+Connection ~ 9200 6600
+Text Label 9200 6700 0    10   ~ 0
+GND
+Wire Wire Line
+	8700 6200 8800 6200
+Wire Wire Line
+	8900 6000 8700 6000
+Wire Wire Line
+	8700 6200 8700 6000
+Wire Wire Line
+	8600 6400 8700 6400
+Wire Wire Line
+	8700 6400 8700 6200
+Connection ~ 8700 6200
+Connection ~ 8700 6000
+Wire Wire Line
+	8600 6600 8700 6600
+Wire Wire Line
+	8700 6600 8700 6700
+Wire Wire Line
+	8700 6700 8900 6700
+Wire Wire Line
+	8800 6500 8700 6500
+Wire Wire Line
+	8700 6500 8700 6600
+Connection ~ 8700 6600
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C303
+U 1 1 5CC0EA16
+P 7000 7400
+F 0 "C303" H 7060 7515 59  0000 L BNN
+F 1 "100n" H 7060 7315 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7000 7400 50  0001 C CNN
+F 3 "" H 7000 7400 50  0001 C CNN
+	1    7000 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0105
+U 1 1 5CC0EA20
+P 7500 6100
+F 0 "#GND0105" H 7500 6100 50  0001 C CNN
+F 1 "GND" H 7400 6000 59  0000 L BNN
+F 2 "" H 7500 6100 50  0001 C CNN
+F 3 "" H 7500 6100 50  0001 C CNN
+	1    7500 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0106
+U 1 1 5CC0EA2A
+P 6800 7600
+F 0 "#GND0106" H 6800 7600 50  0001 C CNN
+F 1 "GND" H 6700 7500 59  0000 L BNN
+F 2 "" H 6800 7600 50  0001 C CNN
+F 3 "" H 6800 7600 50  0001 C CNN
+	1    6800 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C301
+U 1 1 5CC0EA34
+P 9100 6000
+F 0 "C301" H 9160 6115 59  0000 L BNN
+F 1 "1n" H 9160 5915 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9100 6000 50  0001 C CNN
+F 3 "" H 9100 6000 50  0001 C CNN
+	1    9100 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0107
+U 1 1 5CC0EA3E
+P 9400 6200
+F 0 "#GND0107" H 9400 6200 50  0001 C CNN
+F 1 "GND" H 9300 6100 59  0000 L BNN
+F 2 "" H 9400 6200 50  0001 C CNN
+F 3 "" H 9400 6200 50  0001 C CNN
+	1    9400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R301
+U 1 1 5CC0EA48
+P 9000 6200
+F 0 "R301" H 8850 6259 59  0000 L BNN
+F 1 "1k" H 8850 6070 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9000 6200 50  0001 C CNN
+F 3 "" H 9000 6200 50  0001 C CNN
+	1    9000 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:HW-INFINEON_BTN8962TA-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import U3
+U 1 1 5CC0EA52
+P 8100 6700
+F 0 "U3" H 7700 7520 70  0000 L BNN
+F 1 "HW-INFINEON_BTN8982" H 7700 5700 70  0000 L BNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:HW-INFINEON_TO263-7-1" H 8100 6700 50  0001 C CNN
+F 3 "" H 8100 6700 50  0001 C CNN
+	1    8100 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R304
+U 1 1 5CC0EA5C
+P 9000 6500
+F 0 "R304" H 8850 6559 59  0000 L BNN
+F 1 "1k" H 8850 6370 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9000 6500 50  0001 C CNN
+F 3 "" H 9000 6500 50  0001 C CNN
+	1    9000 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C302
+U 1 1 5CC0EA66
+P 9000 6700
+F 0 "C302" H 9060 6815 59  0000 L BNN
+F 1 "47n" H 9060 6615 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9000 6700 50  0001 C CNN
+F 3 "" H 9000 6700 50  0001 C CNN
+	1    9000 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0108
+U 1 1 5CC0EA70
+P 9400 6700
+F 0 "#GND0108" H 9400 6700 50  0001 C CNN
+F 1 "GND" H 9300 6600 59  0000 L BNN
+F 2 "" H 9400 6700 50  0001 C CNN
+F 3 "" H 9400 6700 50  0001 C CNN
+	1    9400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:DINA4_L-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #FRAME3
+U 1 1 5CC0EA7A
+P 6900 8700
+F 0 "#FRAME3" H 6900 8700 50  0001 C CNN
+F 1 "DINA4_L" H 6900 8700 50  0001 C CNN
+F 2 "" H 6900 8700 50  0001 C CNN
+F 3 "" H 6900 8700 50  0001 C CNN
+	1    6900 8700
+	1    0    0    -1  
+$EndComp
+Text Notes 7900 8100 0    70   ~ 0
+Phase 3
+Wire Wire Line
+	6800 6700 7450 6700
+Wire Wire Line
+	7100 7400 7350 7400
+Wire Wire Line
+	2300 6750 2500 6750
+Wire Wire Line
+	2500 6750 2500 7000
+Wire Wire Line
+	2500 7000 3250 7000
+Wire Wire Line
+	3250 7000 3250 5100
+Wire Wire Line
+	2300 6950 2400 6950
+Wire Wire Line
+	2400 6950 2400 7100
+Wire Wire Line
+	3500 7100 3500 5100
+Wire Wire Line
+	6450 7000 6450 5100
+Wire Wire Line
+	6700 7100 6700 5100
+Wire Wire Line
+	5450 6750 5650 6750
+Wire Wire Line
+	5650 6750 5650 7000
+Wire Wire Line
+	5650 7000 6450 7000
+Wire Wire Line
+	5450 6950 5550 6950
+Wire Wire Line
+	5550 6950 5550 7100
+Wire Wire Line
+	9600 7050 9600 5150
+Wire Wire Line
+	9850 7150 9850 5150
+Wire Wire Line
+	8800 6800 8800 7050
+Wire Wire Line
+	8800 7050 9600 7050
+Wire Wire Line
+	8600 7000 8700 7000
+Wire Wire Line
+	8700 7000 8700 7150
+Wire Wire Line
+	8600 6800 8800 6800
+Text Label 2400 3950 0    50   ~ 0
+IS_1
+Text Label 3250 3950 0    50   ~ 0
+PWM_1
+Text Label 3500 4150 0    50   ~ 0
+EN_1
+Text Label 5550 4050 0    50   ~ 0
+IS_2
+Text Label 6450 4250 0    50   ~ 0
+PWM_2
+Text Label 6700 4050 0    50   ~ 0
+EN_2
+Text Label 8700 4200 0    50   ~ 0
+IS_3
+Text Label 9600 4050 0    50   ~ 0
+PWM_3
+Text Label 9850 4150 0    50   ~ 0
+EN_3
+$Comp
+L power:+BATT #PWR0101
+U 1 1 5CC2CF85
+P 7350 7400
+F 0 "#PWR0101" H 7350 7250 50  0001 C CNN
+F 1 "+BATT" H 7365 7573 50  0000 C CNN
+F 2 "" H 7350 7400 50  0001 C CNN
+F 3 "" H 7350 7400 50  0001 C CNN
+	1    7350 7400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 7400
+Wire Wire Line
+	7350 7400 7600 7400
+$Comp
+L power:+BATT #PWR0102
+U 1 1 5CC2D75D
+P 4200 7350
+F 0 "#PWR0102" H 4200 7200 50  0001 C CNN
+F 1 "+BATT" H 4215 7523 50  0000 C CNN
+F 2 "" H 4200 7350 50  0001 C CNN
+F 3 "" H 4200 7350 50  0001 C CNN
+	1    4200 7350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 7350
+Wire Wire Line
+	4200 7350 4450 7350
+$Comp
+L power:+BATT #PWR0103
+U 1 1 5CC2E1A4
+P 1000 7350
+F 0 "#PWR0103" H 1000 7200 50  0001 C CNN
+F 1 "+BATT" H 1015 7523 50  0000 C CNN
+F 2 "" H 1000 7350 50  0001 C CNN
+F 3 "" H 1000 7350 50  0001 C CNN
+	1    1000 7350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 7350
+Wire Wire Line
+	1000 7350 1300 7350
+Wire Wire Line
+	8400 1950 8400 1650
+Wire Wire Line
+	8400 2350 8400 2250
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0109
+U 1 1 5CC31F7B
+P 8400 2450
+F 0 "#GND0109" H 8400 2450 50  0001 C CNN
+F 1 "GND" H 8300 2350 59  0000 L BNN
+F 2 "" H 8400 2450 50  0001 C CNN
+F 3 "" H 8400 2450 50  0001 C CNN
+	1    8400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0105
+U 1 1 5CC31F85
+P 8400 1650
+F 0 "#PWR0105" H 8400 1500 50  0001 C CNN
+F 1 "+BATT" H 8415 1823 50  0000 C CNN
+F 2 "" H 8400 1650 50  0001 C CNN
+F 3 "" H 8400 1650 50  0001 C CNN
+	1    8400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R302
+U 1 1 5CC5E98F
+P 9600 4950
+F 0 "R302" H 9650 4800 59  0000 L BNN
+F 1 "1k" H 9450 4820 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9600 4950 50  0001 C CNN
+F 3 "" H 9600 4950 50  0001 C CNN
+	1    9600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R303
+U 1 1 5CC5F052
+P 9850 4950
+F 0 "R303" H 9900 5050 59  0000 L BNN
+F 1 "1k" H 9700 5050 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9850 4950 50  0001 C CNN
+F 3 "" H 9850 4950 50  0001 C CNN
+	1    9850 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R202
+U 1 1 5CC64F38
+P 6450 4900
+F 0 "R202" H 6500 4750 59  0000 L BNN
+F 1 "1k" H 6300 4770 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6450 4900 50  0001 C CNN
+F 3 "" H 6450 4900 50  0001 C CNN
+	1    6450 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R203
+U 1 1 5CC64F42
+P 6700 4900
+F 0 "R203" H 6750 5000 59  0000 L BNN
+F 1 "1k" H 6550 5000 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6700 4900 50  0001 C CNN
+F 3 "" H 6700 4900 50  0001 C CNN
+	1    6700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R102
+U 1 1 5CC68241
+P 3250 4900
+F 0 "R102" H 3300 4750 59  0000 L BNN
+F 1 "1k" H 3100 4770 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3250 4900 50  0001 C CNN
+F 3 "" H 3250 4900 50  0001 C CNN
+	1    3250 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R103
+U 1 1 5CC6824B
+P 3500 4900
+F 0 "R103" H 3550 5000 59  0000 L BNN
+F 1 "1k" H 3350 5000 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3500 4900 50  0001 C CNN
+F 3 "" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 7100 6700 7100
+Wire Wire Line
+	8700 7150 9850 7150
+Wire Wire Line
+	2400 7100 3500 7100
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R5
+U 1 1 5CC75707
+P 3000 1500
+F 0 "R5" H 3050 1600 59  0000 L BNN
+F 1 "1k" H 2850 1600 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3000 1500 50  0001 C CNN
+F 3 "" H 3000 1500 50  0001 C CNN
+	1    3000 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R6
+U 1 1 5CC788B5
+P 3000 1900
+F 0 "R6" H 3050 2000 59  0000 L BNN
+F 1 "1k" H 2850 2000 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3000 1900 50  0001 C CNN
+F 3 "" H 3000 1900 50  0001 C CNN
+	1    3000 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R7
+U 1 1 5CC78EB7
+P 3000 2300
+F 0 "R7" H 3050 2400 59  0000 L BNN
+F 1 "1k" H 2850 2400 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3000 2300 50  0001 C CNN
+F 3 "" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R4
+U 1 1 5CC7953A
+P 1350 1000
+F 0 "R4" H 1400 1100 59  0000 L BNN
+F 1 "10k" H 1200 1100 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1350 1000 50  0001 C CNN
+F 3 "" H 1350 1000 50  0001 C CNN
+	1    1350 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R1
+U 1 1 5CC7C315
+P 1700 1000
+F 0 "R1" H 1750 1100 59  0000 L BNN
+F 1 "2k2" H 1550 1100 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1700 1000 50  0001 C CNN
+F 3 "" H 1700 1000 50  0001 C CNN
+	1    1700 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R2
+U 1 1 5CC7C70B
+P 2050 1000
+F 0 "R2" H 2100 1100 59  0000 L BNN
+F 1 "2k2" H 1900 1100 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2050 1000 50  0001 C CNN
+F 3 "" H 2050 1000 50  0001 C CNN
+	1    2050 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L breakout-esc-rescue:RESISTOR0603-RES-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import R3
+U 1 1 5CC7C96C
+P 2350 1000
+F 0 "R3" H 2400 1100 59  0000 L BNN
+F 1 "2k2" H 2200 1100 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2350 1000 50  0001 C CNN
+F 3 "" H 2350 1000 50  0001 C CNN
+	1    2350 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 1200 2350 2300
+Wire Wire Line
+	2350 2300 2800 2300
+Wire Wire Line
+	2050 1200 2050 1900
+Wire Wire Line
+	2050 1900 2800 1900
+Wire Wire Line
+	1700 1200 1700 1500
+Wire Wire Line
+	1700 1500 2800 1500
+$Comp
+L Device:C C4
+U 1 1 5CC86FE5
+P 1350 2900
+F 0 "C4" H 1465 2946 50  0000 L CNN
+F 1 "4n7" H 1465 2855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 1388 2750 50  0001 C CNN
+F 3 "~" H 1350 2900 50  0001 C CNN
+	1    1350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CC87C65
+P 3750 2750
+F 0 "C5" H 3865 2796 50  0000 L CNN
+F 1 "4n7" H 3865 2705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3788 2600 50  0001 C CNN
+F 3 "~" H 3750 2750 50  0001 C CNN
+	1    3750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5CC88114
+P 4350 2750
+F 0 "C6" H 4465 2796 50  0000 L CNN
+F 1 "4n7" H 4465 2705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4388 2600 50  0001 C CNN
+F 3 "~" H 4350 2750 50  0001 C CNN
+	1    4350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5CC882F3
+P 4950 2750
+F 0 "C7" H 5065 2796 50  0000 L CNN
+F 1 "4n7" H 5065 2705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4988 2600 50  0001 C CNN
+F 3 "~" H 4950 2750 50  0001 C CNN
+	1    4950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1500 3750 1500
+Wire Wire Line
+	3750 1500 3750 2600
+Wire Wire Line
+	3200 1900 4350 1900
+Wire Wire Line
+	4350 1900 4350 2600
+Wire Wire Line
+	3200 2300 4950 2300
+Wire Wire Line
+	4950 2300 4950 2600
+Wire Wire Line
+	1350 1200 1350 2700
+Connection ~ 1350 2700
+Wire Wire Line
+	1350 2700 1350 2750
+Connection ~ 3750 1500
+Connection ~ 4350 1900
+Connection ~ 4950 2300
+Text Label 650  1500 0    50   ~ 0
+HIN_1
+Text Label 650  1900 0    50   ~ 0
+HIN_2
+Text Label 650  2300 0    50   ~ 0
+HIN_3
+Text Label 650  2700 0    50   ~ 0
+TIN
+Text Label 5550 1500 0    50   ~ 0
+HOUT_1
+Text Label 5550 1900 0    50   ~ 0
+HOUT_2
+Text Label 5550 2300 0    50   ~ 0
+HOUT_3
+$Comp
+L power:VCC #PWR0106
+U 1 1 5CCC9024
+P 1350 800
+F 0 "#PWR0106" H 1350 650 50  0001 C CNN
+F 1 "VCC" H 1367 973 50  0000 C CNN
+F 2 "" H 1350 800 50  0001 C CNN
+F 3 "" H 1350 800 50  0001 C CNN
+	1    1350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5CCC9802
+P 1700 800
+F 0 "#PWR0107" H 1700 650 50  0001 C CNN
+F 1 "VCC" H 1717 973 50  0000 C CNN
+F 2 "" H 1700 800 50  0001 C CNN
+F 3 "" H 1700 800 50  0001 C CNN
+	1    1700 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 5CCC9A47
+P 2050 800
+F 0 "#PWR0108" H 2050 650 50  0001 C CNN
+F 1 "VCC" H 2067 973 50  0000 C CNN
+F 2 "" H 2050 800 50  0001 C CNN
+F 3 "" H 2050 800 50  0001 C CNN
+	1    2050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0109
+U 1 1 5CCC9C6E
+P 2350 800
+F 0 "#PWR0109" H 2350 650 50  0001 C CNN
+F 1 "VCC" H 2367 973 50  0000 C CNN
+F 2 "" H 2350 800 50  0001 C CNN
+F 3 "" H 2350 800 50  0001 C CNN
+	1    2350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 5CCCF266
+P 100 1900
+F 0 "J3" H 100 2300 50  0000 C CNN
+F 1 "Motor Feedback" H 200 2400 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 100 1900 50  0001 C CNN
+F 3 "~" H 100 1900 50  0001 C CNN
+	1    100  1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J2
+U 1 1 5CCD140B
+P 6100 3150
+F 0 "J2" V 6000 3600 50  0000 R CNN
+F 1 "Motor Control" V 6000 3450 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 6100 3150 50  0001 C CNN
+F 3 "~" H 6100 3150 50  0001 C CNN
+	1    6100 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5CCD210A
+P 10200 1300
+F 0 "J1" V 10262 1344 50  0000 L CNN
+F 1 "Logic Voltage Input" V 10353 1344 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10200 1300 50  0001 C CNN
+F 3 "~" H 10200 1300 50  0001 C CNN
+	1    10200 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 1500 10100 1850
+Wire Wire Line
+	10100 1850 9950 1850
+$Comp
+L power:VCC #PWR0110
+U 1 1 5CCE0E53
+P 10550 2100
+F 0 "#PWR0110" H 10550 1950 50  0001 C CNN
+F 1 "VCC" H 10568 2273 50  0000 C CNN
+F 2 "" H 10550 2100 50  0001 C CNN
+F 3 "" H 10550 2100 50  0001 C CNN
+	1    10550 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 1850 10200 1850
+Wire Wire Line
+	10200 1850 10200 1500
+Wire Wire Line
+	5900 3350 5900 3700
+Wire Wire Line
+	5900 3700 2400 3700
+Wire Wire Line
+	2400 3700 2400 5950
+Wire Wire Line
+	5550 3750 5800 3750
+Wire Wire Line
+	5800 3750 5800 3350
+Wire Wire Line
+	5550 3750 5550 5950
+Wire Wire Line
+	8700 3800 5700 3800
+Wire Wire Line
+	5700 3800 5700 3350
+Wire Wire Line
+	8700 3800 8700 6000
+Wire Wire Line
+	3250 3650 6200 3650
+Wire Wire Line
+	6200 3650 6200 3350
+Wire Wire Line
+	3250 3650 3250 4700
+Wire Wire Line
+	6450 3600 6100 3600
+Wire Wire Line
+	6100 3600 6100 3350
+Wire Wire Line
+	6450 3600 6450 4700
+Wire Wire Line
+	9600 3550 6000 3550
+Wire Wire Line
+	6000 3550 6000 3350
+Wire Wire Line
+	9600 3550 9600 4750
+Wire Wire Line
+	3500 3500 6500 3500
+Wire Wire Line
+	6500 3500 6500 3350
+Wire Wire Line
+	3500 3500 3500 4700
+Wire Wire Line
+	6700 3450 6400 3450
+Wire Wire Line
+	6400 3450 6400 3350
+Wire Wire Line
+	6700 3450 6700 4700
+Wire Wire Line
+	9850 3400 6300 3400
+Wire Wire Line
+	6300 3400 6300 3350
+Wire Wire Line
+	9850 3400 9850 4750
+Wire Wire Line
+	10350 2450 10300 2450
+Wire Wire Line
+	10000 2450 9950 2450
+Wire Wire Line
+	9950 2450 9950 2050
+Wire Wire Line
+	9700 2050 9950 2050
+Connection ~ 9950 2050
+Wire Wire Line
+	9950 2050 9950 1850
+Wire Wire Line
+	10350 1850 10350 2050
+Wire Wire Line
+	10550 2100 10550 2050
+Wire Wire Line
+	10550 2050 10350 2050
+Connection ~ 10350 2050
+Wire Wire Line
+	10350 2050 10350 2450
+$Comp
+L Connector_Generic:Conn_01x01 PH1
+U 1 1 5CDBCC7C
+P 500 6850
+F 0 "PH1" V 372 6930 50  0000 L CNN
+F 1 "Drive" V 463 6930 50  0000 L CNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:Banana_Jack_1Pin" H 500 6850 50  0001 C CNN
+F 3 "~" H 500 6850 50  0001 C CNN
+	1    500  6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 PH2
+U 1 1 5CDD7B0B
+P 3650 6850
+F 0 "PH2" V 3522 6930 50  0000 L CNN
+F 1 "Drive" V 3613 6930 50  0000 L CNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:Banana_Jack_1Pin" H 3650 6850 50  0001 C CNN
+F 3 "~" H 3650 6850 50  0001 C CNN
+	1    3650 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 PH3
+U 1 1 5CDD8180
+P 6800 6900
+F 0 "PH3" V 6672 6980 50  0000 L CNN
+F 1 "Drive" V 6763 6980 50  0000 L CNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:Banana_Jack_1Pin" H 6800 6900 50  0001 C CNN
+F 3 "~" H 6800 6900 50  0001 C CNN
+	1    6800 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 V-1
+U 1 1 5CDD87FE
+P 8600 2350
+F 0 "V-1" H 8680 2392 50  0000 L CNN
+F 1 "Power" H 8680 2301 50  0000 L CNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:Banana_Jack_1Pin" H 8600 2350 50  0001 C CNN
+F 3 "~" H 8600 2350 50  0001 C CNN
+	1    8600 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 2350
+$Comp
+L Connector_Generic:Conn_01x01 V+1
+U 1 1 5CDDA0D3
+P 8600 1650
+F 0 "V+1" H 8680 1692 50  0000 L CNN
+F 1 "Power" H 8680 1601 50  0000 L CNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:Banana_Jack_1Pin" H 8600 1650 50  0001 C CNN
+F 3 "~" H 8600 1650 50  0001 C CNN
+	1    8600 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 1650
+$Comp
+L power:VCC #PWR0111
+U 1 1 5CDF7B59
+P 300 1700
+F 0 "#PWR0111" H 300 1550 50  0001 C CNN
+F 1 "VCC" H 317 1873 50  0000 C CNN
+F 2 "" H 300 1700 50  0001 C CNN
+F 3 "" H 300 1700 50  0001 C CNN
+	1    300  1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	450  2700 1350 2700
+Connection ~ 2050 1900
+Connection ~ 2350 2300
+Wire Wire Line
+	600  1900 600  2000
+Wire Wire Line
+	600  2000 300  2000
+Wire Wire Line
+	600  1900 2050 1900
+Wire Wire Line
+	600  2300 600  2100
+Wire Wire Line
+	600  2100 300  2100
+Wire Wire Line
+	600  2300 2350 2300
+Wire Wire Line
+	450  2700 450  1800
+Wire Wire Line
+	450  1800 300  1800
+Connection ~ 1700 1500
+Wire Wire Line
+	500  1500 500  1900
+Wire Wire Line
+	500  1900 300  1900
+Wire Wire Line
+	500  1500 1700 1500
+Wire Wire Line
+	1300 6850 1150 6850
+Wire Wire Line
+	1150 6850 1150 6650
+Connection ~ 1150 6650
+Wire Wire Line
+	1150 6650 1300 6650
+Wire Wire Line
+	4450 6850 4350 6850
+Wire Wire Line
+	4350 6850 4350 6650
+Connection ~ 4350 6650
+Wire Wire Line
+	4350 6650 4450 6650
+Wire Wire Line
+	7600 6900 7450 6900
+Wire Wire Line
+	7450 6900 7450 6700
+Connection ~ 7450 6700
+Wire Wire Line
+	7450 6700 7600 6700
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 5CC28E2A
+P 6350 1900
+F 0 "J4" H 6322 1832 50  0000 R CNN
+F 1 "Hall Logic" H 6322 1923 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6350 1900 50  0001 C CNN
+F 3 "~" H 6350 1900 50  0001 C CNN
+	1    6350 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2000 6050 2000
+Wire Wire Line
+	6050 2000 6050 1500
+Wire Wire Line
+	3750 1500 6050 1500
+Wire Wire Line
+	4350 1900 6150 1900
+Wire Wire Line
+	6150 1800 5950 1800
+Wire Wire Line
+	5950 1800 5950 2300
+Wire Wire Line
+	4950 2300 5950 2300
+$Comp
+L Device:CP C1
+U 1 1 5CC7B421
+P 8400 2100
+F 0 "C1" H 8518 2146 50  0000 L CNN
+F 1 "1000u" H 8518 2055 50  0000 L CNN
+F 2 "BTN8982_Motor_Control_Shield_Rev_1.0:CP_Radial_D25.0mm_P10.00mm_3pin_SnapIn" H 8438 1950 50  0001 C CNN
+F 3 "~" H 8400 2100 50  0001 C CNN
+	1    8400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5CC7C9FC
+P 10150 2450
+F 0 "C2" V 9895 2450 50  0000 C CNN
+F 1 "47u" V 9986 2450 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 10188 2300 50  0001 C CNN
+F 3 "~" H 10150 2450 50  0001 C CNN
+	1    10150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDS #PWR0104
+U 1 1 5CE0C0C2
+P 9700 2050
+F 0 "#PWR0104" H 9700 1800 50  0001 C CNN
+F 1 "GNDS" H 9705 1877 50  0000 C CNN
+F 2 "" H 9700 2050 50  0001 C CNN
+F 3 "" H 9700 2050 50  0001 C CNN
+	1    9700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0112
+U 1 1 5CE0C6D8
+P 1350 3050
+F 0 "#PWR0112" H 1350 2800 50  0001 C CNN
+F 1 "GNDS" H 1355 2877 50  0000 C CNN
+F 2 "" H 1350 3050 50  0001 C CNN
+F 3 "" H 1350 3050 50  0001 C CNN
+	1    1350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0113
+U 1 1 5CE0C9A3
+P 3750 2900
+F 0 "#PWR0113" H 3750 2650 50  0001 C CNN
+F 1 "GNDS" H 3755 2727 50  0000 C CNN
+F 2 "" H 3750 2900 50  0001 C CNN
+F 3 "" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0114
+U 1 1 5CE0CDB1
+P 4350 2900
+F 0 "#PWR0114" H 4350 2650 50  0001 C CNN
+F 1 "GNDS" H 4355 2727 50  0000 C CNN
+F 2 "" H 4350 2900 50  0001 C CNN
+F 3 "" H 4350 2900 50  0001 C CNN
+	1    4350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0115
+U 1 1 5CE0D017
+P 4950 2900
+F 0 "#PWR0115" H 4950 2650 50  0001 C CNN
+F 1 "GNDS" H 4955 2727 50  0000 C CNN
+F 2 "" H 4950 2900 50  0001 C CNN
+F 3 "" H 4950 2900 50  0001 C CNN
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 5CE0FA48
+P 7200 2350
+F 0 "JP1" H 7200 2614 50  0000 C CNN
+F 1 "Ground Tie" H 7200 2523 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7200 2350 50  0001 C CNN
+F 3 "~" H 7200 2350 50  0001 C CNN
+	1    7200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0116
+U 1 1 5CE10063
+P 7500 2350
+F 0 "#PWR0116" H 7500 2100 50  0001 C CNN
+F 1 "GNDS" H 7505 2177 50  0000 C CNN
+F 2 "" H 7500 2350 50  0001 C CNN
+F 3 "" H 7500 2350 50  0001 C CNN
+	1    7500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0110
+U 1 1 5CE103AF
+P 6900 2450
+F 0 "#GND0110" H 6900 2450 50  0001 C CNN
+F 1 "GND" H 6800 2350 59  0000 L BNN
+F 2 "" H 6900 2450 50  0001 C CNN
+F 3 "" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_2Pole TP1
+U 1 1 5CE12050
+P 7350 700
+F 0 "TP1" H 7350 895 50  0000 C CNN
+F 1 "Battery" H 7350 804 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7350 700 50  0001 C CNN
+F 3 "~" H 7350 700 50  0001 C CNN
+	1    7350 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_2Pole TP2
+U 1 1 5CE12B92
+P 7350 1250
+F 0 "TP2" H 7350 1445 50  0000 C CNN
+F 1 "Logic Supply" H 7350 1354 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7350 1250 50  0001 C CNN
+F 3 "~" H 7350 1250 50  0001 C CNN
+	1    7350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:GND-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import #GND0111
+U 1 1 5CE131FF
+P 7150 800
+F 0 "#GND0111" H 7150 800 50  0001 C CNN
+F 1 "GND" H 7050 700 59  0000 L BNN
+F 2 "" H 7150 800 50  0001 C CNN
+F 3 "" H 7150 800 50  0001 C CNN
+	1    7150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0117
+U 1 1 5CE1B98F
+P 7150 1250
+F 0 "#PWR0117" H 7150 1000 50  0001 C CNN
+F 1 "GNDS" H 7155 1077 50  0000 C CNN
+F 2 "" H 7150 1250 50  0001 C CNN
+F 3 "" H 7150 1250 50  0001 C CNN
+	1    7150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0118
+U 1 1 5CE1C29E
+P 7550 700
+F 0 "#PWR0118" H 7550 550 50  0001 C CNN
+F 1 "+BATT" H 7565 873 50  0000 C CNN
+F 2 "" H 7550 700 50  0001 C CNN
+F 3 "" H 7550 700 50  0001 C CNN
+	1    7550 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0119
+U 1 1 5CE1C761
+P 7550 1250
+F 0 "#PWR0119" H 7550 1100 50  0001 C CNN
+F 1 "VCC" H 7568 1423 50  0000 C CNN
+F 2 "" H 7550 1250 50  0001 C CNN
+F 3 "" H 7550 1250 50  0001 C CNN
+	1    7550 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDS #PWR0120
+U 1 1 5CE246C3
+P 300 2200
+F 0 "#PWR0120" H 300 1950 50  0001 C CNN
+F 1 "GNDS" H 305 2027 50  0000 C CNN
+F 2 "" H 300 2200 50  0001 C CNN
+F 3 "" H 300 2200 50  0001 C CNN
+	1    300  2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L breakout-esc-rescue:CAP0603-CAP-BTN8982_Motor_Control_Shield_Rev_1.0-eagle-import C102
+U 1 1 59663956
+P 2700 6650
+F 0 "C102" H 2760 6765 59  0000 L BNN
+F 1 "47n" H 2760 6565 59  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2700 6650 50  0001 C CNN
+F 3 "" H 2700 6650 50  0001 C CNN
+	1    2700 6650
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

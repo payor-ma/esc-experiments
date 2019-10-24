@@ -1,0 +1,286 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity sin_lut is
+port
+(
+    index :    in  std_logic_vector(7 downto 0);
+    sin_data : out signed(11 downto 0)
+);
+end sin_lut;
+
+-- 8 bit input means that:
+--     85.333 index offset = 120 degrees offset
+--     each increment is 1.4 degrees equivalent
+--     so if you want 3 offset waves, call 0+index,85+index,171+index
+-- 12 bit output
+
+architecture rtl of sin_lut is
+
+    signal table_counter : std_logic_vector(7 downto 0);
+    signal table_value : std_logic_vector(11 downto 0);
+
+begin
+
+    sin_data <= table_value;
+    table_counter <= index;
+
+    table_value <=  "100000000000" when table_counter = 0 else
+    "100000110010" when table_counter = 1 else
+    "100001100100" when table_counter = 2 else
+    "100010010110" when table_counter = 3 else
+    "100011001000" when table_counter = 4 else
+    "100011111010" when table_counter = 5 else
+    "100100101100" when table_counter = 6 else
+    "100101011101" when table_counter = 7 else
+    "100110001111" when table_counter = 8 else
+    "100111000000" when table_counter = 9 else
+    "100111110001" when table_counter = 10 else
+    "101000100001" when table_counter = 11 else
+    "101001010010" when table_counter = 12 else
+    "101010000010" when table_counter = 13 else
+    "101010110001" when table_counter = 14 else
+    "101011100000" when table_counter = 15 else
+    "101100001111" when table_counter = 16 else
+    "101100111101" when table_counter = 17 else
+    "101101101011" when table_counter = 18 else
+    "101110011000" when table_counter = 19 else
+    "101111000100" when table_counter = 20 else
+    "101111110000" when table_counter = 21 else
+    "110000011100" when table_counter = 22 else
+    "110001000111" when table_counter = 23 else
+    "110001110001" when table_counter = 24 else
+    "110010011010" when table_counter = 25 else
+    "110011000011" when table_counter = 26 else
+    "110011101011" when table_counter = 27 else
+    "110100010010" when table_counter = 28 else
+    "110100111001" when table_counter = 29 else
+    "110101011110" when table_counter = 30 else
+    "110110000011" when table_counter = 31 else
+    "110110100111" when table_counter = 32 else
+    "110111001010" when table_counter = 33 else
+    "110111101100" when table_counter = 34 else
+    "111000001110" when table_counter = 35 else
+    "111000101110" when table_counter = 36 else
+    "111001001101" when table_counter = 37 else
+    "111001101100" when table_counter = 38 else
+    "111010001001" when table_counter = 39 else
+    "111010100110" when table_counter = 40 else
+    "111011000001" when table_counter = 41 else
+    "111011011011" when table_counter = 42 else
+    "111011110101" when table_counter = 43 else
+    "111100001101" when table_counter = 44 else
+    "111100100100" when table_counter = 45 else
+    "111100111010" when table_counter = 46 else
+    "111101001111" when table_counter = 47 else
+    "111101100011" when table_counter = 48 else
+    "111101110101" when table_counter = 49 else
+    "111110000111" when table_counter = 50 else
+    "111110010111" when table_counter = 51 else
+    "111110100110" when table_counter = 52 else
+    "111110110100" when table_counter = 53 else
+    "111111000001" when table_counter = 54 else
+    "111111001101" when table_counter = 55 else
+    "111111010111" when table_counter = 56 else
+    "111111100000" when table_counter = 57 else
+    "111111101000" when table_counter = 58 else
+    "111111101111" when table_counter = 59 else
+    "111111110101" when table_counter = 60 else
+    "111111111001" when table_counter = 61 else
+    "111111111100" when table_counter = 62 else
+    "111111111110" when table_counter = 63 else
+    "111111111111" when table_counter = 64 else
+    "111111111110" when table_counter = 65 else
+    "111111111100" when table_counter = 66 else
+    "111111111001" when table_counter = 67 else
+    "111111110101" when table_counter = 68 else
+    "111111101111" when table_counter = 69 else
+    "111111101000" when table_counter = 70 else
+    "111111100000" when table_counter = 71 else
+    "111111010111" when table_counter = 72 else
+    "111111001101" when table_counter = 73 else
+    "111111000001" when table_counter = 74 else
+    "111110110100" when table_counter = 75 else
+    "111110100110" when table_counter = 76 else
+    "111110010111" when table_counter = 77 else
+    "111110000111" when table_counter = 78 else
+    "111101110101" when table_counter = 79 else
+    "111101100011" when table_counter = 80 else
+    "111101001111" when table_counter = 81 else
+    "111100111010" when table_counter = 82 else
+    "111100100100" when table_counter = 83 else
+    "111100001101" when table_counter = 84 else
+    "111011110101" when table_counter = 85 else
+    "111011011011" when table_counter = 86 else
+    "111011000001" when table_counter = 87 else
+    "111010100110" when table_counter = 88 else
+    "111010001001" when table_counter = 89 else
+    "111001101100" when table_counter = 90 else
+    "111001001101" when table_counter = 91 else
+    "111000101110" when table_counter = 92 else
+    "111000001110" when table_counter = 93 else
+    "110111101100" when table_counter = 94 else
+    "110111001010" when table_counter = 95 else
+    "110110100111" when table_counter = 96 else
+    "110110000011" when table_counter = 97 else
+    "110101011110" when table_counter = 98 else
+    "110100111001" when table_counter = 99 else
+    "110100010010" when table_counter = 100 else
+    "110011101011" when table_counter = 101 else
+    "110011000011" when table_counter = 102 else
+    "110010011010" when table_counter = 103 else
+    "110001110001" when table_counter = 104 else
+    "110001000111" when table_counter = 105 else
+    "110000011100" when table_counter = 106 else
+    "101111110000" when table_counter = 107 else
+    "101111000100" when table_counter = 108 else
+    "101110011000" when table_counter = 109 else
+    "101101101011" when table_counter = 110 else
+    "101100111101" when table_counter = 111 else
+    "101100001111" when table_counter = 112 else
+    "101011100000" when table_counter = 113 else
+    "101010110001" when table_counter = 114 else
+    "101010000010" when table_counter = 115 else
+    "101001010010" when table_counter = 116 else
+    "101000100001" when table_counter = 117 else
+    "100111110001" when table_counter = 118 else
+    "100111000000" when table_counter = 119 else
+    "100110001111" when table_counter = 120 else
+    "100101011101" when table_counter = 121 else
+    "100100101100" when table_counter = 122 else
+    "100011111010" when table_counter = 123 else
+    "100011001000" when table_counter = 124 else
+    "100010010110" when table_counter = 125 else
+    "100001100100" when table_counter = 126 else
+    "100000110010" when table_counter = 127 else
+    "100000000000" when table_counter = 128 else
+    "011111001101" when table_counter = 129 else
+    "011110011011" when table_counter = 130 else
+    "011101101001" when table_counter = 131 else
+    "011100110111" when table_counter = 132 else
+    "011100000101" when table_counter = 133 else
+    "011011010011" when table_counter = 134 else
+    "011010100010" when table_counter = 135 else
+    "011001110000" when table_counter = 136 else
+    "011000111111" when table_counter = 137 else
+    "011000001110" when table_counter = 138 else
+    "010111011110" when table_counter = 139 else
+    "010110101101" when table_counter = 140 else
+    "010101111101" when table_counter = 141 else
+    "010101001110" when table_counter = 142 else
+    "010100011111" when table_counter = 143 else
+    "010011110000" when table_counter = 144 else
+    "010011000010" when table_counter = 145 else
+    "010010010100" when table_counter = 146 else
+    "010001100111" when table_counter = 147 else
+    "010000111011" when table_counter = 148 else
+    "010000001111" when table_counter = 149 else
+    "001111100011" when table_counter = 150 else
+    "001110111000" when table_counter = 151 else
+    "001110001110" when table_counter = 152 else
+    "001101100101" when table_counter = 153 else
+    "001100111100" when table_counter = 154 else
+    "001100010100" when table_counter = 155 else
+    "001011101101" when table_counter = 156 else
+    "001011000110" when table_counter = 157 else
+    "001010100001" when table_counter = 158 else
+    "001001111100" when table_counter = 159 else
+    "001001011000" when table_counter = 160 else
+    "001000110101" when table_counter = 161 else
+    "001000010011" when table_counter = 162 else
+    "000111110001" when table_counter = 163 else
+    "000111010001" when table_counter = 164 else
+    "000110110010" when table_counter = 165 else
+    "000110010011" when table_counter = 166 else
+    "000101110110" when table_counter = 167 else
+    "000101011001" when table_counter = 168 else
+    "000100111110" when table_counter = 169 else
+    "000100100100" when table_counter = 170 else
+    "000100001010" when table_counter = 171 else
+    "000011110010" when table_counter = 172 else
+    "000011011011" when table_counter = 173 else
+    "000011000101" when table_counter = 174 else
+    "000010110000" when table_counter = 175 else
+    "000010011100" when table_counter = 176 else
+    "000010001010" when table_counter = 177 else
+    "000001111000" when table_counter = 178 else
+    "000001101000" when table_counter = 179 else
+    "000001011001" when table_counter = 180 else
+    "000001001011" when table_counter = 181 else
+    "000000111110" when table_counter = 182 else
+    "000000110010" when table_counter = 183 else
+    "000000101000" when table_counter = 184 else
+    "000000011111" when table_counter = 185 else
+    "000000010111" when table_counter = 186 else
+    "000000010000" when table_counter = 187 else
+    "000000001010" when table_counter = 188 else
+    "000000000110" when table_counter = 189 else
+    "000000000011" when table_counter = 190 else
+    "000000000001" when table_counter = 191 else
+    "000000000001" when table_counter = 192 else
+    "000000000001" when table_counter = 193 else
+    "000000000011" when table_counter = 194 else
+    "000000000110" when table_counter = 195 else
+    "000000001010" when table_counter = 196 else
+    "000000010000" when table_counter = 197 else
+    "000000010111" when table_counter = 198 else
+    "000000011111" when table_counter = 199 else
+    "000000101000" when table_counter = 200 else
+    "000000110010" when table_counter = 201 else
+    "000000111110" when table_counter = 202 else
+    "000001001011" when table_counter = 203 else
+    "000001011001" when table_counter = 204 else
+    "000001101000" when table_counter = 205 else
+    "000001111000" when table_counter = 206 else
+    "000010001010" when table_counter = 207 else
+    "000010011100" when table_counter = 208 else
+    "000010110000" when table_counter = 209 else
+    "000011000101" when table_counter = 210 else
+    "000011011011" when table_counter = 211 else
+    "000011110010" when table_counter = 212 else
+    "000100001010" when table_counter = 213 else
+    "000100100100" when table_counter = 214 else
+    "000100111110" when table_counter = 215 else
+    "000101011001" when table_counter = 216 else
+    "000101110110" when table_counter = 217 else
+    "000110010011" when table_counter = 218 else
+    "000110110010" when table_counter = 219 else
+    "000111010001" when table_counter = 220 else
+    "000111110001" when table_counter = 221 else
+    "001000010011" when table_counter = 222 else
+    "001000110101" when table_counter = 223 else
+    "001001011000" when table_counter = 224 else
+    "001001111100" when table_counter = 225 else
+    "001010100001" when table_counter = 226 else
+    "001011000110" when table_counter = 227 else
+    "001011101101" when table_counter = 228 else
+    "001100010100" when table_counter = 229 else
+    "001100111100" when table_counter = 230 else
+    "001101100101" when table_counter = 231 else
+    "001110001110" when table_counter = 232 else
+    "001110111000" when table_counter = 233 else
+    "001111100011" when table_counter = 234 else
+    "010000001111" when table_counter = 235 else
+    "010000111011" when table_counter = 236 else
+    "010001100111" when table_counter = 237 else
+    "010010010100" when table_counter = 238 else
+    "010011000010" when table_counter = 239 else
+    "010011110000" when table_counter = 240 else
+    "010100011111" when table_counter = 241 else
+    "010101001110" when table_counter = 242 else
+    "010101111101" when table_counter = 243 else
+    "010110101101" when table_counter = 244 else
+    "010111011110" when table_counter = 245 else
+    "011000001110" when table_counter = 246 else
+    "011000111111" when table_counter = 247 else
+    "011001110000" when table_counter = 248 else
+    "011010100010" when table_counter = 249 else
+    "011011010011" when table_counter = 250 else
+    "011100000101" when table_counter = 251 else
+    "011100110111" when table_counter = 252 else
+    "011101101001" when table_counter = 253 else
+    "011110011011" when table_counter = 254 else
+    "011111001101" when table_counter = 255;
+
+end;

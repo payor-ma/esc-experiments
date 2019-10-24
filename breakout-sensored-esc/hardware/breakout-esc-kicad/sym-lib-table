@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name breakout-esc-eagle-import)(type Legacy)(uri ${KIPRJMOD}/breakout-esc-eagle-import.lib)(options "")(descr ""))
+  (lib (name breakout-esc-rescue)(type Legacy)(uri ${KIPRJMOD}/breakout-esc-rescue.lib)(options "")(descr ""))
+)
